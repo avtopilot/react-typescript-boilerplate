@@ -1,0 +1,74 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react"
+    ],
+    "rules": {
+        "class-name": true,
+        "no-var-keyword": true,
+        "comment-format": [
+            "check-space"
+        ],
+        "linebreak-style": [
+            "CRLF"
+        ],
+        "indent": [
+            "spaces"
+        ],
+        "one-line": [
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "quotemark": [
+            "double",
+            "avoid-escape"
+        ],
+        "semicolon": [
+            "always",
+            "ignore-bound-class-methods"
+        ],
+        "max-line-length": [
+            140
+        ],
+        "whitespace": [
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-type"
+        ],
+        "typedef-whitespace": [
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ],
+        "variable-name": [
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case"
+        ],
+        "interface-name": [
+            "never-prefix"
+        ],
+        "member-access": true,
+        "member-ordering": [
+            false
+        ],
+        "triple-equals": true,
+        "prefer-const": true,
+        "no-null-keyword": true
+    }
+}

@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { App } from "./App";
 import { AppContainer } from "react-hot-loader";
+import { App } from "./App";
 
-declare var module: { hot: any };
+declare const module: { hot: any };
 
 const renderApp = (App: any) => ReactDOM.render(
     <AppContainer>
