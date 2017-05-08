@@ -5,8 +5,10 @@
   "description": "Boilerplate for React project with Typescript, Webpack 2 and hot code reloading",
   "main": "./src/index.tsx",
   "scripts": {
+    "clean": "rimraf dist",
     "start": "webpack-dev-server --port 3000",
-    "build": "webpack -p"
+    "build": "npm run clean && npm run build:prod",
+    "build:prod": "webpack -p"
   },
   "author": "Julia Tolipova",
   "license": "MIT",
@@ -28,6 +30,7 @@
     "awesome-typescript-loader": "^3.1.2",
     "html-webpack-plugin": "^2.28.0",
     "react-hot-loader": "^3.0.0-beta.5",
+    "rimraf": "^2.6.1",
     "source-map-loader": "^0.2.1",
     "tslint": "^5.1.0",
     "tslint-react": "^3.0.0",
